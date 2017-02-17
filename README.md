@@ -1,2 +1,4 @@
-# wptm
-Wordpress Tema İskeleti
+#wpRify
+WordPress theme skeleton with modern development tools 
+
+
