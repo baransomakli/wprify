@@ -1,0 +1,15 @@
+{
+    "name": "projekod/wptm",
+    "description": "WordModern Starter Theme for Wordpress",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Projekod",
+            "email": "selam@projekod.com"
+        }
+    ],
+    "require": {
+        "gambitph/titan-framework": "^1.9",
+        "timber/timber": "^1.2"
+    }
+}
