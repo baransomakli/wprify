@@ -1,0 +1,2 @@
+# wptm
+Wordpress Tema İskeleti
