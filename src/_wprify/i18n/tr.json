@@ -2,6 +2,6 @@
   "NO_CONFIG_FILE":"Config dosyası bulunamadı",
   "ALREADY_INSTALLED":"Daha önceden kurulum yapılmış",
   "ASK_THEME_NAME":"Lütfen tema adını yazınız",
-  "ASK_WP_URL":"Wordpress Url Yazınız"
-
+  "ASK_WP_URL":"Wordpress Url Yazınız",
+  "ASK_COMPANY_NAME":"Şirket adı nedir ?"
 }

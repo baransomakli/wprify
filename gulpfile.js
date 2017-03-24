@@ -1,5 +1,5 @@
 var concat, gulp, gutil, sass, uglify, imagemin, minifyCSS,
-    browserSync, autoprefixer, gulpSequence, shell, sourceMaps, plumber, cleanCSS, uncss, staticHash,version;
+    browserSync, autoprefixer, gulpSequence, shell, sourceMaps, plumber, cleanCSS, uncss, staticHash, version;
 var autoPrefixBrowserList = ['last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'];
 
 gulp = require('gulp');
@@ -21,7 +21,17 @@ staticHash = require('gulp-static-hash');
 version = require('gulp-version-number');
 
 
-var wordpressUrl = 'wptm.dev';
+
+var config = require('./src/_wprify/config.json');
+if (!config.installed) {
+    console.log("\n");
+    console.log("Config File Error");
+    console.log("Please run : npm run setup");
+    console.log("\n");
+    return;
+}
+
+var wordpressUrl = config.wpUrl;
 
 var cssFiles = [
     'src/css/inc/bootstrap.min.css',

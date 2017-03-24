@@ -13,6 +13,12 @@ module.exports = function (wf) {
             name: 'wpUrl',
             message: wf.l('ASK_WP_URL')
         },
+        {
+            type: 'input',
+            name: 'companyName',
+            message: wf.l('ASK_COMPANY_NAME')
+        },
+
     ];
 
     wf.inquirer.prompt(questions).then(function (answers) {
@@ -23,4 +29,5 @@ module.exports = function (wf) {
         wf.config.set('installed', true);
         wf.config.writeSync(null, '  ');
     });
+
 };

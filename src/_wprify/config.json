@@ -1,5 +1,6 @@
 {
-  "installed": false,
-  "themeName": "",
-  "wpUrl": ""
+  "installed": true,
+  "themeName": "buTemaAdi",
+  "wpUrl": "wptema.dev",
+  "companyName": "Projekod"
 }
