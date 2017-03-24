@@ -21,7 +21,6 @@ staticHash = require('gulp-static-hash');
 version = require('gulp-version-number');
 
 
-
 var config = require('./src/_wprify/config.json');
 if (!config.installed) {
     console.log("\n");
@@ -32,6 +31,8 @@ if (!config.installed) {
 }
 
 var wordpressUrl = config.wpUrl;
+console.log(wordpressUrl);
+
 
 var cssFiles = [
     'src/css/inc/bootstrap.min.css',
@@ -130,13 +131,13 @@ gulp.task('sass', function () {
         }))
         .on('error', gutil.log)
         .pipe(gulp.dest('src/css'))
-        .pipe(browserSync.stream());
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('twig', function () {
-    return gulp.src('templates/*.html')
+    return gulp.src('templates/*.twig')
         .pipe(plumber())
-        .pipe(browserSync.stream())
+        .pipe(browserSync.reload({stream: true}))
         .on('error', gutil.log);
 });
 
@@ -148,9 +149,10 @@ gulp.task('clean', function () {
 });
 
 gulp.task('default', ['browserSync', 'scripts', 'sass', 'css'], function () {
-    gulp.watch('src/js/**', ['scripts']).on('change', browserSync.reload);
-    gulp.watch('src/css/**', ['css']).on('change', browserSync.reload);
-    gulp.watch('src/sass/**', ['sass']).on('change', browserSync.reload);
-    gulp.watch('src/images/**', ['images']).on('change', browserSync.reload);
-    gulp.watch('templates/*.twig', ['twig']).on('change', browserSync.reload);
+    //.on('change', browserSync.reload)
+    gulp.watch('src/js/**', ['scripts']);
+    gulp.watch('src/css/**', ['css']);
+    gulp.watch('src/sass/**', ['sass']);
+    gulp.watch('src/images/**', ['images']);
+    gulp.watch('templates/*.twig', ['twig']);
 });
