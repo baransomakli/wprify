@@ -4,3 +4,5 @@ npm_modules/
 npm-debug.log
 node_modules/
 bower_components/
+src/css/style.css
+src/css/build.css
