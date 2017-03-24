@@ -3,8 +3,14 @@
   "version": "0.0.1",
   "description": "Yet another Gulp scaffolding for wordpress theme",
   "dependencies": {},
+  "scripts": {
+    "setup": "node wprify.js setup"
+  },
   "devDependencies": {
     "browser-sync": "^2.18.7",
+    "chalk": "^1.1.1",
+    "commander": "^2.9.0",
+    "download-git-repo": "^0.2.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^3.0.3",
@@ -20,6 +26,8 @@
     "gulp-uglify": "^2.0.1",
     "gulp-uncss": "^1.0.6",
     "gulp-util": "^3.0.8",
-    "gulp-version-number": "^0.1.6"
+    "gulp-version-number": "^0.1.6",
+    "inquirer": "^3.0.6",
+    "json-file": "^0.1.0"
   }
 }
