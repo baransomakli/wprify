@@ -1,4 +1,5 @@
 {
-  "installed":false,
-  "wpSiteUrl":"",
+  "installed": false,
+  "themeName": "",
+  "wpUrl": ""
 }

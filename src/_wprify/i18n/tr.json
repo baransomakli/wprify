@@ -1,3 +1,7 @@
 {
-  "CONFIG_EXISTS":"Daha önceden config dosyası oluşturulmıuş devam etmek istiyor musunuz ?"
+  "NO_CONFIG_FILE":"Config dosyası bulunamadı",
+  "ALREADY_INSTALLED":"Daha önceden kurulum yapılmış",
+  "ASK_THEME_NAME":"Lütfen tema adını yazınız",
+  "ASK_WP_URL":"Wordpress Url Yazınız"
+
 }
